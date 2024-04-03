@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(white,rgb(251, 253, 251));
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 75px;
+    height: 50px;
+    transform-origin: bottom center;
+}
+.logo:hover
+{
+    animation: shake 0.2s linear infinite;
+
+}
+@keyframes shake
+{
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar ul li a:hover
+{
+    color: rgb(4, 131, 4);
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover ::after{
+    width: 100%;
+    
+}
+.home
+{
+    background-image: url(source/products.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+}
+.slogan{ 
+   height: 270px;
+   width: 15cm;
+   background-color:#fbf4f4;
+   position: relative;
+   left: 14cm;
+   top: 4cm;
+   color: #040404;
+   opacity: 0.85;
+   text-align: center;
+   
+}
+.shop{
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(91, 212, 91);
+    border-radius: 6px;
+    color: white;
+    width: 150px;
+    height: 30px;
+}
+.shop:hover
+{
+    background-color: green;
+}
